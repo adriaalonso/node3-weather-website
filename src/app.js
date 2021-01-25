@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Adri'
+        name: 'Adrià Alonso Salvat'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Adri'
+        name: 'Adrià Alonso Salvat'
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helpText: 'Refreshing the page could help you',
-        name: 'Adri'
+        name: 'Adrià Alonso Salvat'
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
         errorText: 'Help article not found',
-        name: 'Adri'
+        name: 'Adrià Alonso Salvat'
     })
 })
 
@@ -91,7 +91,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         errorText: 'Page not found',
-        name: 'Adri'
+        name: 'Adrià Alonso Salvat'
     })
 })
 
