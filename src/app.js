@@ -29,7 +29,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About me',
+        title: 'About',
         name: 'Adrià Alonso Salvat'
     })
 })
@@ -37,7 +37,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        helpText: 'Refreshing the page could help you',
+        helpText: 'Nobody here can help you',
         name: 'Adrià Alonso Salvat'
     })
 })
